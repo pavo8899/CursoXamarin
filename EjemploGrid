@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EjemploGrid"
+             x:Class="EjemploGrid.MainPage">
+             
+    <StackLayout>
+        <Grid
+            HorizontalOptions="Fill"
+            VerticalOptions="Center">
+            <!-- Definicion de 5 columnas -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <!-- Definicion de 4 Filas -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Agregando Controles a la Grilla -->
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Facebook"
+                TextColor="#FFFFFF"
+                BackgroundColor="#4267B2"
+                />
+            <Button
+                Grid.Row="0"
+                Grid.Column="2"
+                Text="Twitter"
+                TextColor="#FFFFFF"
+                BackgroundColor="#1DA1F2"
+                />
+            <Button
+                Grid.Row="0"
+                Grid.Column="3"
+                Text="Google"
+                TextColor="#FFFFFF"
+                BackgroundColor="#DD4C39"
+                />
+            <Entry
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="5"
+                Keyboard="Email"
+                PlaceHolder="Email"
+                />
+            <Entry
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="5"
+                Keyboard="Text"
+                PlaceHolder="Contraseña"
+                IsPassword="True"
+                />
+            <Button
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="5"
+                Text="Iniciar Sesión"
+                BackgroundColor="Green"
+                TextColor="White"
+                />
+        </Grid>
+    </StackLayout>
+</ContentPage>
